@@ -1,0 +1,15 @@
+
+data:
+  mongodb:
+    repositories:
+      enabled: true
+
+    host: localhost
+
+spring:
+  application:
+     name: trackservice
+
+logging:
+  level:
+    com.stackroute.route: DEBUG

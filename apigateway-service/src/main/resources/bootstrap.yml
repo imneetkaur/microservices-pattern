@@ -1,0 +1,15 @@
+server:
+  port: 8761
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8085
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+      register-with-eureka: true
+      fetch-registry: true
+

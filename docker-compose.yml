@@ -1,0 +1,21 @@
+version: "2"
+services:
+  eureka-server:
+    build: ./spring-eureka-server
+    network_mode: host
+
+  api-server:
+    build: ./apigateway-service
+    network_mode: host
+
+  config-server:
+    build: ./config-server
+    network_mode: host
+
+  musix:
+    build: ./musix-service
+    network_mode: host
+
+  user:
+    build: ./user-service
+    network_mode: host

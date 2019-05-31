@@ -1,0 +1,10 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: userservice
+
+  cloud:
+    config:
+      uri: http://localhost:8085
